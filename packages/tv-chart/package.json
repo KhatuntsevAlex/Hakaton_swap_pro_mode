@@ -1,0 +1,28 @@
+{
+  "name": "@app/tv-chart",
+  "version": "0.1.0",
+  "private": false,
+  "files": [
+    "package.json",
+    "dist",
+    "./src/hooks/index.ts"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs"
+    }
+  },
+  "peerDependencies": {
+    "react": ">=17.0.2",
+    "@app/framework": "file:../framework"
+  },
+  "scripts": {
+    "build": "rimraf dist && vite build",
+    "watch": "vite build --watch",
+    "clean": "rimraf node_modules",
+    "lint": "eslint ./src --ext .ts"
+  }
+}

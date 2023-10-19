@@ -1,0 +1,49 @@
+.tv_chart_header {
+    display: flex;
+    gap: 2px;
+    width: 100%;
+
+    & > .info {
+        contain: content;
+        border-radius: 6px;
+        background: var(--color-black-100);
+        display: flex;
+        align-items: center;
+        padding: 14px;
+    }
+
+    .info {
+        padding-left: 11px;
+        padding-right: 11px;
+        flex: 1;
+        gap: 8px;
+        justify-content: space-between;
+
+        &_cell {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            &_label {
+                color: var(--color-white-100-tr5);
+            }
+
+            &_value {
+                display: flex;
+                gap: 2px;
+            }
+        }
+    }
+}
+
+.diffPlus {
+    color: var(--color-green-100);
+}
+
+.diffMinus {
+    color: var(--color-rose-100);
+
+    & > * {
+        color: inherit !important;
+    }
+}

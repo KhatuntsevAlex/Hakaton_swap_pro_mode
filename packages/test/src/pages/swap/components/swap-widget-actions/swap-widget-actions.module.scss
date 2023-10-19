@@ -1,0 +1,18 @@
+.widget_actions {
+    display: flex;
+    gap: 16px;
+
+    &_item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &.padding_right {
+            padding-right: 24px;
+        }
+    }
+}
+
+.flip_tokens_icon {
+    cursor: pointer;
+}

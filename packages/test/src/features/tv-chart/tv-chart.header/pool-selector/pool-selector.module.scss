@@ -1,0 +1,45 @@
+@import '../../../../styles/mixins.scss';
+
+.pool_btn {
+    all: unset;
+    box-sizing: border-box;
+    max-width: fit-content;
+    min-width: 200px;
+    gap: 9px;
+    margin: 0;
+    cursor: pointer;
+    contain: content;
+    border-radius: 6px;
+    background: var(--color-black-100);
+    display: flex;
+    align-items: center;
+    padding: 14px;
+
+    & > p {
+        margin-right: 11px;
+    }
+}
+
+.chevron {
+    margin-left: auto;
+}
+
+.scroll_area {
+    padding: 6px;
+    overflow-y: auto;
+    @include custom-scrollbar;
+    max-height: 300px;
+}
+
+.pool_selector {
+    width: 200px;
+    padding: 2px;
+    border-radius: 6px;
+    border: 1px solid var(--color-gray-200);
+    background: var(--color-white-100);
+    color: var(--color-black-100);
+
+    & + div {
+        background-color: transparent !important;
+    }
+}

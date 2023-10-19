@@ -1,0 +1,25 @@
+.pool_list {
+    margin: 0;
+    padding: 0;
+
+    &_item {
+        padding: 8px;
+        margin: 0;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: all 0.2s ease-in;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 8px;
+
+        &:hover,
+        &.selected {
+            background-color: var(--color-gray-200-tr);
+        }
+
+        &.selected {
+            cursor: default;
+        }
+    }
+}

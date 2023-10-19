@@ -1,0 +1,9 @@
+.info {
+    background: var(--color-black-100);
+    padding: 15px;
+    border-radius: 6px;
+
+    &_warning {
+        color: var(--color-orange-100);
+    }
+}

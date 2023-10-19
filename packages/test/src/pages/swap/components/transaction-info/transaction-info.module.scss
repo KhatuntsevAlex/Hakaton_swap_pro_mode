@@ -1,0 +1,59 @@
+@import 'src/styles/layout';
+
+.root {
+    row-gap: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-white-100);
+    border-radius: 6px;
+    height: 42px;
+    cursor: pointer;
+    padding: 0 5px 0 8px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &_icon {
+        &_color {
+            background: var(--color-black-100);
+        }
+    }
+    .text {
+        margin-top: 1px;
+        color: var(--color-black-100);
+    }
+}
+
+.black {
+    color: var(--color-black-100);
+}
+
+.icon {
+    padding: 5px 7px;
+    cursor: pointer;
+    &_color {
+        background: var(--color-black-100);
+    }
+    &.up {
+        transform: rotate(180deg);
+    }
+}
+
+.transaction_info {
+    padding: 11px 8px 8px !important;
+
+    & > div > div {
+        line-height: 20px !important;
+    }
+    & > p {
+        margin-bottom: 4px;
+    }
+}

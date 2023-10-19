@@ -1,0 +1,40 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "semi": [
+      "error",
+      "always"
+    ],
+    "indent": ["error", 4],
+    "no-tabs": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-indent-props": 0,
+    "react/require-default-props": 0,
+    "react/function-component-definition": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/prop-types": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "no-underscore-dangle": 0,
+    "no-shadow": 0,
+    "no-plusplus": 0,
+    "default-param-last": 0,
+    "function-paren-newline": ["error", "consistent"],
+    "linebreak-style": 0,
+    "implicit-arrow-linebreak": 0,
+    "react/react-in-jsx-scope": 0
+  },
+  "ignorePatterns": ["tv-chart-library/"]
+}

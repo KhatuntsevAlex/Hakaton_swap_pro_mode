@@ -1,0 +1,51 @@
+.buy_sell_switcher {
+    width: 100%;
+    display: flex;
+    gap: 2px;
+}
+
+.btn {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-white-100-tr1);
+    color: var(--color-white-100-tr5);
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    .icon {
+        opacity: 0.6;
+    }
+
+    .tokens {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .arrow {
+        background-color: var(--color-white-100-tr5);
+        transform: rotate(180deg);
+    }
+
+    &.selected {
+        border-color: var(--color-white-100-tr5);
+        background-color: var(--color-white-100-tr1);
+        color: var(--color-white-100);
+
+        .icon {
+            opacity: 1;
+        }
+    }
+}

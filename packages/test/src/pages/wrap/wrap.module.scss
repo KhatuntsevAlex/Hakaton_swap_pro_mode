@@ -1,0 +1,53 @@
+@import 'src/styles/mixins.scss';
+@import 'src/styles/layout.scss';
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+
+  &>div {
+    position: relative;
+    margin: 90px 0px 50px;
+
+    @media ($media_mobile) {
+      margin: 75px 15px 90px;
+    }
+  }
+}
+
+.info {
+  background: var(--color-black-100);
+  padding: 15px;
+  border-radius: 6px;
+}
+.cloud {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 15px;
+  gap: 7px;
+  background: var(--color-black-100);
+  border-radius: 6px;
+
+  &_video {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.description {
+  color: var(--color-white-100-tr);
+}
+
+.wrappingText {
+  color: var(--color-orange-100);
+}
+
+.pencil {
+  background-color: var(--color-black-100rt);
+  min-width: 20px;  
+}
